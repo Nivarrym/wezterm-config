@@ -12,7 +12,7 @@
   </a>
 </p>
 
-![screenshot](./.github/screenshots/demo-2.gif)
+![screenshot](./.github/screenshots/wezterm.gif)
 
 ---
 
@@ -59,7 +59,7 @@
 
 ### Getting Started
 
-- #### Requirements:
+- ##### Requirements:
 
   - <details>
       <summary><b>WezTerm</b></summary>
@@ -122,7 +122,7 @@
     > :bulb:<br>
     > Toast notifications don't work in non-portable installations.<br>
     > See issue <https://github.com/wez/wezterm/issues/5166> for more details
-
+  
     ---
 
     **MacOS**
@@ -175,7 +175,8 @@
     Install with Homebrew (Macos)
 
     ```sh
-    brew install --cask font-jetbrains-mono-nerd-font
+    brew tap homebrew/cask-fonts
+    brew install font-jetbrains-mono-nerd-font
     ```
 
     Install with Scoop (Windows)
@@ -193,23 +194,20 @@
 
 &nbsp;
 
-- #### Steps:
+- ##### Steps:
 
   1.  ```sh
       # On Windows and Unix systems
       git clone https://github.com/KevinSilvester/wezterm-config.git ~/.config/wezterm
       ```
-  2.  Update `launch` and `domain` related option:
-      - [./config/launch.lua](./config/launch.lua) for preferred shells and its paths
-      - [./config/domains.lua](./config/domains.lua) for custom SSH/WSL domains
-  3.  And Done!!! 🎉🎉
+  2.  And Done!!! 🎉🎉
 
 &nbsp;
 
-- #### Optional But Useful:
+- ##### Things You Might Want to Change:
 
-  - [**`wezterm-types`**](https://github.com/DrKJeff16/wezterm-types): **Highly** recommend setting this up for type completion and inline 
-  documentation of every configuration option, events and actions method signatures, etc. Includes type definitions for some popular Wezterm plugins as well.
+  - [./config/domains.lua](./config/domains.lua) for custom SSH/WSL domains
+  - [./config/launch.lua](./config/launch.lua) for preferred shells and its paths
 
 ---
 
@@ -300,11 +298,11 @@ Most of the key bindings revolve around a <kbd>SUPER</kbd> and <kbd>SUPER_REV</k
 
 #### Windows
 
-| Keys                          | Action                                                             |
-| ----------------------------- | ------------------------------------------------------------------ |
-| <kbd>SUPER</kbd>+<kbd>n</kbd> | `SpawnWindow`                                                      |
-| <kbd>SUPER</kbd>+<kbd>=</kbd> | Increase Window Size <sub>(disabled on Windows due to a bug)</sub> |
-| <kbd>SUPER</kbd>+<kbd>-</kbd> | Decrease Window Size <sub>(disabled on Windows due to a bug)</sub> |
+| Keys                          | Action               |
+| ----------------------------- | -------------------- |
+| <kbd>SUPER</kbd>+<kbd>n</kbd> | `SpawnWindow`        |
+| <kbd>SUPER</kbd>+<kbd>=</kbd> | Increase Window Size |
+| <kbd>SUPER</kbd>+<kbd>-</kbd> | Decrease Window Size |
 
 &nbsp;
 
