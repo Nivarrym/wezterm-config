@@ -65,10 +65,10 @@ local keys = {
    { key = 'w',          mods = mod.SUPER_REV, action = act.CloseCurrentTab({ confirm = false }) },
 
    -- tabs: navigation
-   { key = 'LeftArrow',          mods = mod.SUPER_REV,     action = act.ActivateTabRelative(-1) },
-   { key = 'RightArrow',          mods = mod.SUPER_REV,     action = act.ActivateTabRelative(1) },
-   { key = 'Numpad4',          mods = mod.SUPER_REV, action = act.MoveTabRelative(-1) },
-   { key = 'Numpad6',          mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
+   { key = ',',          mods = mod.SUPER_REV,     action = act.ActivateTabRelative(-1) },
+   { key = '.',          mods = mod.SUPER_REV,     action = act.ActivateTabRelative(1) },
+   { key = '[',          mods = mod.SUPER_REV, action = act.MoveTabRelative(-1) },
+   { key = ']',          mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
 
    -- tab: title
    { key = '0',          mods = mod.SUPER,     action = act.EmitEvent('tabs.manual-update-tab-title') },
